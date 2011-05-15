@@ -7,20 +7,24 @@
         <link rel="stylesheet" href="{{STATIC_URL}}css/style.css" type="text/css" media="screen" />
     </head>
     <body>
-    <img src="{{ STATIC_URL }}img/hellboy_logo.jpg" />
-    <h1>Parabéns {{subscription.name}}!</h1>
-    <p>
-      Sua inscrição foi realizada em
-      {{subscription.created_at|date:"d/m/Y"}}.
-    </p>
-    <p>
-      Em breve, alguém entrará em contato pelo
-      {% if subscription.phone %}
-        telefone {{ subscription.phone }}.
-      {% else %}
-        e-mail {{ subscription.email }}.
-      {% endif %}
-    </p>
-</body>
+	    <img src="{{ STATIC_URL }}img/hellboy_logo.jpg" class="floatLeft" />
+		<h1>EventeX</h1>
+
+		<hr />
+		<p>
+			O evento mais sensacional do ano depois do DevInRio!
+		</p>
+		<p>
+			<strong>Inscrições abertas em 15/05/2011</strong>
+		</p>
+		<p>
+			Para dúvidas e mais informações, entre em contato com <a href="mailto:eventex@eventex.com.br">eventex@eventex.com.br</a>
+		</p>
+		<hr />
+		<p>
+			Sistema e design "90's like" por Mayck Xavier - <a href="mailto:contato@mayckxavier.com">contato@mayckxavier.com</a><br />
+			You're in the jungle, babe. Welcome to the Django!
+		</p>
+	</body>
 </html>
 
